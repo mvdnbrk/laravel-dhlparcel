@@ -1,0 +1,54 @@
+{
+    "name": "mvdnbrk/laravel-dhlparcel",
+    "description": "DHL Parcel API client wrapper for Laravel",
+    "keywords": [
+        "laravel",
+        "dhl",
+        "parcel",
+        "api"
+    ],
+    "homepage": "https://github.com/mvdnbrk/laravel-dhlparcel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark van den Broek",
+            "email": "mvdnbrk@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^5.8 || ^6.0",
+        "mvdnbrk/dhlparcel-php-api": "^0.5.0"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^3.0",
+        "orchestra/testbench": "^3.8 || ^4.0",
+        "phpunit/phpunit": "^8.0",
+        "scrutinizer/ocular": "^1.6",
+        "symfony/var-dumper": "^4.3"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mvdnbrk\\DhlParcel\\DhlParcelServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Mvdnbrk\\DhlParcel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mvdnbrk\\DhlParcel\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
