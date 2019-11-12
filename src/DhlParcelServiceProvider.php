@@ -4,7 +4,7 @@ namespace Mvdnbrk\DhlParcel;
 
 use Illuminate\Support\ServiceProvider;
 
-class DhlServiceServiceProvider extends ServiceProvider
+class DhlParcelServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
