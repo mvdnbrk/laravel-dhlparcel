@@ -8,6 +8,8 @@
 [![StyleCI][ico-style-ci]][link-style-ci]
 [![Total Downloads][ico-downloads]][link-downloads]
 
+This package incorporates the [DHL Parcel API client](https://github.com/mvdnbrk/dhlparcel-php-api) into your laravel project.
+
 ## Installation
 
 You can install the package via composer:
@@ -15,15 +17,17 @@ You can install the package via composer:
 ```bash
 composer require mvdnbrk/laravel-dhlparcel
 ```
-## Usage
 
-Add your credentials to the `.env` file:
+## Configuration
+
+All you need to do is add your credentials to the `.env` file:
 
 ```
 DHLPARCEL_ID=YOUR-USER-ID
 DHLPARCEL_SECRET=YOUR-SECRET-KEY
 ```
 
+## Usage
 ## Testing
 
 ``` bash
