@@ -37,9 +37,11 @@ $shipment = DhlParcel::api()->shipments()->create([
 ]);
 ```
 
+* [Full documentation for the DHL Parcel API client](https://github.com/mvdnbrk/dhlparcel-php-api)
+
 ### Global helper method
 
-For your convencience we've added the global dhlparcel() helper function.
+For your convencience we've added the global `dhlparcel()` helper function.
 
 ```php
 dhlparcel()->shipments()->create([
