@@ -11,8 +11,8 @@ return [
     |
     */
 
-    'id' => env('DHLPARCEL_ID'),
+    'id' => env('DHLPARCEL_ID', ''),
 
-    'secret' => env('DHLPARCEL_SECRET'),
+    'secret' => env('DHLPARCEL_SECRET', ''),
 
 ];
