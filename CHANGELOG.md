@@ -4,7 +4,7 @@ All notable changes to `laravel-dhlparcel` will be documented in this file.
 
 ## [Unreleased]
 
-## v1.0.1 - 2019-11-14
+## [v1.0.1] - 2019-11-14
 
 ### Fixed
 - Set `id` and `secret` to an empty string by default. [`21ea1f4`](https://github.com/mvdnbrk/laravel-dhlparcel/commit/21ea1f438895d976dbfbc374463ad6e52f086662)
