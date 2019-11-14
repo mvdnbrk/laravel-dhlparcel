@@ -32,7 +32,7 @@ DHLPARCEL_SECRET=YOUR-SECRET-KEY
 ```php
 use Mvdnbrk\Laravel\Facades\DhlParcel;
 
-$shipment = DhlParcel::api()->shipments()->create([
+$shipment = DhlParcel::shipments()->create([
    ...
 ]);
 ```
