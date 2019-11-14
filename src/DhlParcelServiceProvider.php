@@ -5,6 +5,7 @@ namespace Mvdnbrk\Laravel;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 use Mvdnbrk\DhlParcel\Client;
+use Psr\Container\ContainerInterface;
 
 class DhlParcelServiceProvider extends ServiceProvider implements DeferrableProvider
 {
@@ -44,8 +45,8 @@ class DhlParcelServiceProvider extends ServiceProvider implements DeferrableProv
      */
     protected function registerDhlAdapter()
     {
-        $this->app->singleton(DhlParcelClientAdapter::class, function () {
-            return new DhlParcelClientAdapter(app('dhlparcel'));
+        $this->app->singleton(DhlParcelClientAdapter::class, function (ContainerInterface $container) {
+            return new DhlParcelClientAdapter($container->get('dhlparcel'));
         });
 
         $this->app->alias(DhlParcelClientAdapter::class, 'dhlparcel.adapter');
