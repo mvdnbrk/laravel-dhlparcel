@@ -2,11 +2,21 @@
 
 namespace Mvdnbrk\Laravel\Tests;
 
+use Mvdnbrk\DhlParcel\Client;
+use Mvdnbrk\Laravel\DhlParcelClientAdapter;
+use Mvdnbrk\Laravel\Facades\DhlParcel;
+
 class DhlParcelServiceProviderTest extends TestCase
 {
     /** @test */
-    public function assert_true()
+    public function it_can_resolve_the_dhl_parcel_client()
     {
-        $this->assertTrue(true);
+        $this->assertInstanceOf(Client::class, app('dhlparcel'));
+    }
+
+    /** @test */
+    public function it_can_resolve_the_dhl_parcel_client_adapter()
+    {
+        $this->assertInstanceOf(DhlParcelClientAdapter::class, app('dhlparcel.adapter'));
     }
 }
