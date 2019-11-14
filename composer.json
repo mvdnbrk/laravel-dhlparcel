@@ -43,8 +43,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Mvdnbrk\\DhlParcel\\": "src"
-        }
+            "Mvdnbrk\\Laravel\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
