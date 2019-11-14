@@ -1,6 +1,6 @@
 <?php
 
-namespace Mvdnbrk\DhlParcel\Tests;
+namespace Mvdnbrk\Laravel\Tests;
 
 class DhlParcelServiceProviderTest extends TestCase
 {

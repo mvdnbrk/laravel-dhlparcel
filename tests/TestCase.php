@@ -1,8 +1,8 @@
 <?php
 
-namespace Mvdnbrk\DhlParcel\Tests;
+namespace Mvdnbrk\Laravel\Tests;
 
-use Mvdnbrk\DhlParcel\DhlParcelServiceProvider;
+use Mvdnbrk\Laravel\DhlParcelServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra

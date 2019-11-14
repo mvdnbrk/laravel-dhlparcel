@@ -34,8 +34,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mvdnbrk\\DhlParcel\\DhlParcelServiceProvider"
             ]
+                "Mvdnbrk\\Laravel\\DhlParcelServiceProvider"
         }
     },
     "autoload": {
@@ -45,7 +45,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Mvdnbrk\\DhlParcel\\Tests\\": "tests"
+            "Mvdnbrk\\Laravel\\Tests\\": "tests"
         }
     },
     "scripts": {

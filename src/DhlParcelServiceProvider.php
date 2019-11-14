@@ -1,6 +1,6 @@
 <?php
 
-namespace Mvdnbrk\DhlParcel;
+namespace Mvdnbrk\Laravel;
 
 use Illuminate\Support\ServiceProvider;
 
