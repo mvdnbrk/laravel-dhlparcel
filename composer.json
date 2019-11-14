@@ -34,8 +34,11 @@
     "extra": {
         "laravel": {
             "providers": [
-            ]
                 "Mvdnbrk\\Laravel\\DhlParcelServiceProvider"
+            ],
+            "aliases": {
+                "DhlParcel": "Mvdnbrk\\Laravel\\Facades\\DhlParcel"
+            }
         }
     },
     "autoload": {
