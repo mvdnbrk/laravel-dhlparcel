@@ -4,7 +4,6 @@ namespace Mvdnbrk\Laravel\Tests;
 
 use Mvdnbrk\DhlParcel\Client;
 use Mvdnbrk\Laravel\DhlParcelClientAdapter;
-use Mvdnbrk\Laravel\Facades\DhlParcel;
 
 class DhlParcelServiceProviderTest extends TestCase
 {
