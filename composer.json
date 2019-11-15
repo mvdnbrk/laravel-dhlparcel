@@ -1,6 +1,6 @@
 {
     "name": "mvdnbrk/laravel-dhlparcel",
-    "description": "DHL Parcel API client wrapper for Laravel",
+    "description": "DHL Parcel API client for Laravel",
     "keywords": [
         "laravel",
         "dhl",
