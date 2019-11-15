@@ -12,7 +12,7 @@ class DhlParcelClientAdapter
     protected $client;
 
     /**
-     * Construct a new api wrapper instance.
+     * Construct a new api adapter instance.
      *
      * @param  \Mvdnbrk\DhlParcel\Client  $client
      */
