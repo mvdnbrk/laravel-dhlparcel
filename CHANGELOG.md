@@ -4,6 +4,11 @@ All notable changes to `laravel-dhlparcel` will be documented in this file.
 
 ## [Unreleased]
 
+## [v1.2.0] - 2019-12-03
+
+### Changed
+- Updated version constraint. [`2241080`](https://github.com/mvdnbrk/laravel-dhlparcel/commit/2241080405b1828b2766ceabe988cb62fa59460f)
+
 ## [v1.1.0] - 2019-12-03
 
 ### Changed
@@ -16,7 +21,8 @@ All notable changes to `laravel-dhlparcel` will be documented in this file.
 
 ## [v1.0.0] - 2019-11-14
 
-[Unreleased]: https://github.com/mvdnbrk/laravel-dhlparcel/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/mvdnbrk/laravel-dhlparcel/compare/v1.2.0...HEAD
+[v1.2.0]: https://github.com/mvdnbrk/laravel-dhlparcel/compare/v1.1.0...v1.2.0
 [v1.1.0]: https://github.com/mvdnbrk/laravel-dhlparcel/compare/v1.0.1...v1.1.0
 [v1.0.1]: https://github.com/mvdnbrk/laravel-dhlparcel/compare/v1.0.0...v1.0.1
 [v1.0.0]: https://github.com/mvdnbrk/laravel-dhlparcel/tree/v1.0.0
