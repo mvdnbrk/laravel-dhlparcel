@@ -4,7 +4,7 @@ All notable changes to `laravel-dhlparcel` will be documented in this file.
 
 ## [Unreleased]
 
-## [v1.2.0] - 2019-12-03
+## [v1.2.0] - 2029-02-26
 
 ### Changed
 - Updated version constraint. [`2241080`](https://github.com/mvdnbrk/laravel-dhlparcel/commit/2241080405b1828b2766ceabe988cb62fa59460f)
