@@ -4,6 +4,11 @@ All notable changes to `laravel-dhlparcel` will be documented in this file.
 
 ## [Unreleased]
 
+## [v1.3.0] - 2020-03-06
+
+### Added
+- Added support for Laravel 7. [`3`](https://github.com/mvdnbrk/laravel-dhlparcel/pull/3)
+
 ## [v1.2.0] - 2020-02-26
 
 ### Changed
@@ -21,7 +26,8 @@ All notable changes to `laravel-dhlparcel` will be documented in this file.
 
 ## [v1.0.0] - 2019-11-14
 
-[Unreleased]: https://github.com/mvdnbrk/laravel-dhlparcel/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/mvdnbrk/laravel-dhlparcel/compare/v1.3.0...HEAD
+[v1.3.0]: https://github.com/mvdnbrk/laravel-dhlparcel/compare/v1.2.0...v1.3.0
 [v1.2.0]: https://github.com/mvdnbrk/laravel-dhlparcel/compare/v1.1.0...v1.2.0
 [v1.1.0]: https://github.com/mvdnbrk/laravel-dhlparcel/compare/v1.0.1...v1.1.0
 [v1.0.1]: https://github.com/mvdnbrk/laravel-dhlparcel/compare/v1.0.0...v1.0.1
