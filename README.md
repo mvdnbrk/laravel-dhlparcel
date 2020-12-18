@@ -2,6 +2,7 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
+[![Tests][ico-tests]][link-tests]
 [![StyleCI][ico-style-ci]][link-style-ci]
 [![Total Downloads][ico-downloads]][link-downloads]
 
@@ -74,10 +75,12 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [ico-version]: https://img.shields.io/packagist/v/mvdnbrk/laravel-dhlparcel.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-tests]: https://img.shields.io/github/workflow/status/mvdnbrk/laravel-dhlparcel/tests/main?label=tests&style=flat-square
 [ico-style-ci]: https://styleci.io/repos/220024174/shield?branch=main
 [ico-downloads]: https://img.shields.io/packagist/dt/mvdnbrk/laravel-dhlparcel.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/mvdnbrk/laravel-dhlparcel
+[link-tests]: https://github.com/mvdnbrk/laravel-dhlparcel/actions?query=workflow%3Atests
 [link-style-ci]: https://styleci.io/repos/221086654
 [link-downloads]: https://packagist.org/packages/mvdnbrk/laravel-dhlparcel
 [link-author]: https://github.com/mvdnbrk
