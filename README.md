@@ -80,7 +80,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-travis]: https://img.shields.io/travis/mvdnbrk/laravel-dhlparcel/master.svg?style=flat-square
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/mvdnbrk/laravel-dhlparcel.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/mvdnbrk/laravel-dhlparcel.svg?style=flat-square
-[ico-style-ci]: https://styleci.io/repos/220024174/shield?branch=master
+[ico-style-ci]: https://styleci.io/repos/220024174/shield?branch=main
 [ico-downloads]: https://img.shields.io/packagist/dt/mvdnbrk/laravel-dhlparcel.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/mvdnbrk/laravel-dhlparcel
