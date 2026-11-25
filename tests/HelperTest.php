@@ -3,11 +3,12 @@
 namespace Mvdnbrk\Laravel\Tests;
 
 use Mvdnbrk\Laravel\DhlParcelClientAdapter;
+use PHPUnit\Framework\Attributes\Test;
 
 class HelperTest extends TestCase
 {
-    /** @test */
-    public function it_has_a_helper_function()
+    #[Test]
+    public function it_has_a_helper_function(): void
     {
         $this->assertTrue(function_exists('dhlparcel'));
 

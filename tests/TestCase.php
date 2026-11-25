@@ -2,6 +2,7 @@
 
 namespace Mvdnbrk\Laravel\Tests;
 
+use Illuminate\Foundation\Application;
 use Mvdnbrk\Laravel\DhlParcelServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -10,10 +11,9 @@ abstract class TestCase extends Orchestra
     /**
      * Define environment setup.
      *
-     * @param  \Illuminate\Foundation\Application  $app
-     * @return void
+     * @param  Application  $app
      */
-    protected function getEnvironmentSetUp($app)
+    protected function getEnvironmentSetUp($app): void
     {
         $app['config']->set('dhlparcel.id', '123456');
         $app['config']->set('dhlparcel.secret', 'DHLPARCEL_SECRET_TOKEN');
@@ -22,10 +22,10 @@ abstract class TestCase extends Orchestra
     /**
      * Get package providers.
      *
-     * @param  \Illuminate\Foundation\Application  $app
-     * @return array
+     * @param  Application  $app
+     * @return array<int, class-string>
      */
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
             DhlParcelServiceProvider::class,

@@ -4,6 +4,24 @@ All notable changes to `laravel-dhlparcel` will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.0.0] - 2026-11-25
+
+### Added
+- Added support for Laravel 12 and 13.
+- Added support for PHP 8.2, 8.3, 8.4 and 8.5.
+- Added `capabilities()` to the facade and the `dhlparcel()` helper.
+
+### Changed
+- Requires PHP 8.2 or higher.
+- Requires `mvdnbrk/dhlparcel-php-api` 2.1 or higher. See its [upgrade notes](https://github.com/mvdnbrk/dhlparcel-php-api/blob/main/CHANGELOG.md) for the changes in v2.
+- Added native parameter and return types.
+- The `Mvdnbrk\DhlParcel\Client` can be resolved from the container by class name.
+- Vulnerabilities are reported through GitHub's security advisories.
+
+### Removed
+- Dropped support for PHP 7.2 to 8.1.
+- Dropped support for Laravel 6, 7 and 8.
+
 ## [v1.4.0] - 2020-08-07
 
 ### Added

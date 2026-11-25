@@ -11,10 +11,8 @@ class DhlParcelServiceProvider extends ServiceProvider implements DeferrableProv
 {
     /**
      * Register the application services.
-     *
-     * @return void
      */
-    public function register()
+    public function register(): void
     {
         $this->mergeConfigFrom(__DIR__.'/../config/dhlparcel.php', 'dhlparcel');
 
@@ -26,13 +24,11 @@ class DhlParcelServiceProvider extends ServiceProvider implements DeferrableProv
 
     /**
      * Register the DHL Parcel Client.
-     *
-     * @return void
      */
-    protected function registerDhlClient()
+    protected function registerDhlClient(): void
     {
         $this->app->singleton(Client::class, function () {
-            return (new Client)->setUserId(config('dhlparcel.id'))->setApiKey(config('dhlparcel.secret'));
+            return (new Client)->setUserId((string) config('dhlparcel.id'))->setApiKey((string) config('dhlparcel.secret'));
         });
 
         $this->app->alias(Client::class, 'dhlparcel');
@@ -40,10 +36,8 @@ class DhlParcelServiceProvider extends ServiceProvider implements DeferrableProv
 
     /**
      * Register the DHL Parcel Client Adapter.
-     *
-     * @return void
      */
-    protected function registerDhlAdapter()
+    protected function registerDhlAdapter(): void
     {
         $this->app->singleton(DhlParcelClientAdapter::class, function (ContainerInterface $container) {
             return new DhlParcelClientAdapter($container->get('dhlparcel'));
@@ -54,10 +48,8 @@ class DhlParcelServiceProvider extends ServiceProvider implements DeferrableProv
 
     /**
      * Register the package's publishable resources.
-     *
-     * @return void
      */
-    protected function registerPublishing()
+    protected function registerPublishing(): void
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
@@ -68,13 +60,13 @@ class DhlParcelServiceProvider extends ServiceProvider implements DeferrableProv
 
     /**
      * Get the services provided by the provider.
-     *
-     * @return array
      */
-    public function provides()
+    public function provides(): array
     {
         return [
+            Client::class,
             'dhlparcel',
+            DhlParcelClientAdapter::class,
             'dhlparcel.adapter',
         ];
     }
