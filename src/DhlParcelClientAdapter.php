@@ -3,93 +3,63 @@
 namespace Mvdnbrk\Laravel;
 
 use Mvdnbrk\DhlParcel\Client;
+use Mvdnbrk\DhlParcel\Endpoints\Capabilities;
+use Mvdnbrk\DhlParcel\Endpoints\Labels;
+use Mvdnbrk\DhlParcel\Endpoints\ServicePoints;
+use Mvdnbrk\DhlParcel\Endpoints\Shipments;
+use Mvdnbrk\DhlParcel\Endpoints\TrackTrace;
 
 class DhlParcelClientAdapter
 {
-    /**
-     * @var \Mvdnbrk\DhlParcel\Client
-     */
-    protected $client;
+    public function __construct(protected Client $client) {}
 
-    /**
-     * Construct a new api adapter instance.
-     *
-     * @param  \Mvdnbrk\DhlParcel\Client  $client
-     */
-    public function __construct(Client $client)
-    {
-        $this->client = $client;
-    }
-
-    /**
-     * @return string
-     */
-    public function getAccountId()
+    public function getAccountId(): ?string
     {
         return $this->client->getAccountId();
     }
 
-    /**
-     * @param  string  $value
-     * @return \Mvdnbrk\Laravel\DhlParcelClientAdapter
-     */
-    public function setAccountId(string $value)
+    public function setAccountId(string $value): self
     {
         $this->client->setAccountId($value);
 
         return $this;
     }
 
-    /**
-     * @param  string  $value
-     * @return \Mvdnbrk\Laravel\DhlParcelClientAdapter
-     */
-    public function setApiKey(string $value)
+    public function setApiKey(string $value): self
     {
         $this->client->setApiKey($value);
 
         return $this;
     }
 
-    /**
-     * @param  string  $value
-     * @return \Mvdnbrk\Laravel\DhlParcelClientAdapter
-     */
-    public function setUserId(string $value)
+    public function setUserId(string $value): self
     {
         $this->client->setUserId($value);
 
         return $this;
     }
 
-    /**
-     * @return \Mvdnbrk\DhlParcel\Endpoints\Labels
-     */
-    public function labels()
+    public function capabilities(): Capabilities
+    {
+        return $this->client->capabilities;
+    }
+
+    public function labels(): Labels
     {
         return $this->client->labels;
     }
 
-    /**
-     * @return \Mvdnbrk\DhlParcel\Endpoints\Shipments
-     */
-    public function shipments()
+    public function shipments(): Shipments
     {
         return $this->client->shipments;
     }
 
-    /**
-     * @return \Mvdnbrk\DhlParcel\Endpoints\ServicePoints
-     */
-    public function servicePoints()
+    public function servicePoints(): ServicePoints
     {
         return $this->client->servicePoints;
     }
 
-    /**
-     * @return \Mvdnbrk\DhlParcel\Endpoints\TrackTrace
-     */
-    public function tracktrace()
+    public function tracktrace(): TrackTrace
     {
         return $this->client->tracktrace;
     }
